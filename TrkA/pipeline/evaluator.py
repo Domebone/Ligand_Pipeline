@@ -1,3 +1,5 @@
+#this program reads the data from candidate list and puts it into a data structure. It also grabs the SMILE from curated ligand list.
+
 import csv
 import operator
 import sys
@@ -8,7 +10,7 @@ with open(sys.argv[1],"r") as f:
 	next(reader)		#skip first empty row
 	for row in reader:
 		
-		data[row[0]]=row[1]
+		data[row[0]]=row[1]			#read all the info from candidate_list.csv into the data dict
 f.close()
 
 																#Getting the LIGAND_IDs of the top 10 binding affinity ligands
@@ -18,8 +20,8 @@ data_sorted = sorted(data.items(), key=operator.itemgetter(1),reverse=True)	#hav
 best_ligands={}
 
 for i in range(0,10):
-	best_ligands[data_sorted[i][0]]=data_sorted[i][1]						#getting top10 into a dict
-print(best_ligands)
+	best_ligands[data_sorted[i][0]]=data_sorted[i][1]						#getting top 10 dockers into a dict
+#print(best_ligands)
 
 
 counter=0
@@ -36,10 +38,13 @@ with open("curated_ligand_list.csv","r") as f:
 		break								#breaking here means we only go thru one row
 	
 	f.seek(0)								#we go back to beginning of the csv
-	for row in reader: 
-		if row[0] in best_ligands and row[counter] not in added_ligands:
-			added_ligands.append(row[counter])		#ensures we dont have duplicate SMILES
-			print(row[counter])
+	with open("temp_list.csv","w") as t:			#we check if row[0] AKA the ligand name is in our best_ligands list.
+		writer=csv.writer(t,delimiter="\t")
+		for row in reader: 
+			if row[0] in best_ligands and row[counter] not in added_ligands:
+				added_ligands.append(row[counter])		#ensures we dont have duplicate SMILES
+				writer.writerow((row[0],row[counter]))	
+			
 
 
 

@@ -1,0 +1,29 @@
+receptor= receptor/1wwa.pdbqt
+ligand= pdbqt/CHEMBL2037226_nitrogen_modded_with_ethanol_version_2.pdbqt
+
+
+
+center_x= -36
+
+center_y= 76.07
+
+center_z= 20.47
+
+
+
+size_x= 38
+
+size_y= 44
+
+size_z= 44
+
+
+
+out= output/CHEMBL2037226_nitrogen_modded_with_ethanol_version_2.pdbqt
+
+
+log= logs/CHEMBL2037226_nitrogen_modded_with_ethanol_version_2.pdbqt.txt
+
+
+exhaustiveness= 8
+energy_range= 4

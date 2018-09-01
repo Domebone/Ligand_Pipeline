@@ -1,0 +1,10 @@
+CHEMBL3904509	OC(=Nc1cnc(Oc2ccc(cc2)c3cnn4ccc(nc34)N5CCC5)nc1)Nc6cc(ccc6c7cccnc7)C(F)(F)F
+CHEMBL2037211	CN1CCN(CC1)c2cc(cc(c2)C(F)(F)F)C(=O)Nc3cccc(Nc4ccc5\C(=C\c6ccc[nH]6)\C(=O)Nc5c4)c3
+CHEMBL2037225	Cc1ccc(NC(=O)Nc2cccc(c2)C(F)(F)F)cc1Nc3ccc4\C(=C\c5ccc[nH]5)\C(=O)Nc4c3
+CHEMBL2037208	FC(F)(F)c1cccc(c1)C(=O)Nc2cccc(Nc3ccc4\C(=C\c5ccc[nH]5)\C(=O)Nc4c3)c2
+CHEMBL2037222	CN1CCN(CC1)c2cc(cc(c2)C(F)(F)F)C(=O)Nc3cccc(Nc4ccc5\C(=C\c6[nH]c(C)c(C(=O)O)c6C)\C(=O)Nc5c4)c3
+CHEMBL1983268	CN1CCN(CC1)c2ccc(C(=O)Nc3n[nH]c4ccc(Cc5cc(F)cc(F)c5)cc34)c(NC6CCOCC6)c2
+CHEMBL2037209	Cc1cn(cn1)c2cc(cc(c2)C(F)(F)F)C(=O)Nc3cccc(Nc4ccc5\C(=C\c6ccc[nH]6)\C(=O)Nc5c4)c3
+CHEMBL2037213	OC1CCN(CC1)c2cc(cc(c2)C(F)(F)F)C(=O)Nc3cccc(Nc4ccc5\C(=C\c6ccc[nH]6)\C(=O)Nc5c4)c3
+CHEMBL2037226	Cc1ccc(NC(=O)Nc2cc(ccc2F)C(F)(F)F)cc1Nc3ccc4\C(=C\c5ccc[nH]5)\C(=O)Nc4c3
+CHEMBL3913818	OC(=Nc1cnc(Oc2ccc(cc2)c3c[nH]c4nccc4c3)nc1)Nc5cc(ccc5c6cccnc6)C(F)(F)F

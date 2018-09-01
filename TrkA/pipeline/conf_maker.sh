@@ -20,13 +20,11 @@ RECEPTOR_ID=receptor/1wwa.pdbqt
 
 
 
-
-
 #identify the ligand ID -> will have to vary for every run
 
 
 
-LIGAND_ID=pdbqt/$1
+LIGAND_ID=$2/$1
 
 
 #eg output: ligand= SO.pdbqt
@@ -103,13 +101,13 @@ echo ''
 
 echo ''
 
-echo out= output/${1}
+echo out= ${4}/${1}
 
 echo ''
 
 echo ''
 
-echo log= logs/${1}.txt
+echo log= ${5}/${1}.txt
 
 echo ''
 
@@ -123,5 +121,5 @@ echo energy_range= 4
 
 #With the default (or any given) setting of exhaustiveness, the time spent on the search is already varied heuristically depending on the number of atoms, flexibility, etc. Normally, it does not make sense to spend extra time searching to reduce the probability of not finding the global minimum of the scoring function beyond what is significantly lower than the probability that the minimum is far from the native conformation. However, if you feel that the automatic trade-off made between exhaustiveness and time is inadequate, you can increase the exhaustiveness level. This should increase the time linearly and decrease the probability of not finding the minimum exponentially.
 
-} >configs/${1}_conf.txt
+} >${3}/${1}_conf.txt
 
